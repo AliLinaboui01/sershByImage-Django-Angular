@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ElementRef, ViewChild } from '@angular/core';
 import { ImagesService } from '../../core/services/images.service';
 
 @Component({
@@ -8,38 +8,51 @@ import { ImagesService } from '../../core/services/images.service';
 })
 export class HeaderComponent {
   constructor(private imagesService: ImagesService) {}
-  onHomeClick() {
-    alert('rak ghadi mzn kmel');
+  @ViewChild('fileInput') fileInput: ElementRef | undefined;
+
+  // ... other component code
+
+  triggerFileInput() {
+    if (this.fileInput) {
+      this.fileInput.nativeElement.click();
+    }
   }
   onFileSelected(event: any) {
-    // console.log('event', event);
-    let imagePath = '';
-    const file: File = event.target.files[0];
-    const reader = new FileReader();
+    if (event && event.target && event.target.files && event.target.files.length > 0) {
+        const file: File = event.target.files[0];
+        const reader = new FileReader();
 
-    reader.onload = (e: any) => {
-      imagePath = e.target.result;
-      // console.log('Image Path:', imagePath);
-      // You can now use the image path or perform further operations here
-    };
+        reader.onload = (e: any) => {
+            const imagePath = e.target.result;
+            // this.searshByImage(imagePath);
+            console.log(imagePath)
+        };
 
-    reader.readAsDataURL(file);
-    this.searshByImage(imagePath);
-  }
+        reader.readAsDataURL(file);
+
+    } else {
+        console.error('No file selected.');
+    }
+}
+
+
+
+
+
 
   searshByImage(data: any) {
-    const form:any = document.getElementById('imageForm');
-    const formData = new FormData(form);
+    const fileInput:any = document.getElementById('myImage');
+    const formData = new FormData();
+    formData.append('myImage', fileInput.files[0]);
 
-    // console.log("header",data)
-    console.log("header",formData)
     this.imagesService.searshByImages(formData).subscribe({
       next: (data) => {
-        // console.log('test', data);
+        console.log('test', data);
       },
       error: (error) => {
-        // console.log('test', error);
+        console.log('test', error);
       },
     });
-  }
+}
+
 }

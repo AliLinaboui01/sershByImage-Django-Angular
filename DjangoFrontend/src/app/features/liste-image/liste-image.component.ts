@@ -16,12 +16,12 @@ export class ListeImageComponent implements OnInit {
 
   getAllImages(){
     this.imagesService.getImages().subscribe({
-      next:(data)=>{
-        // console.log("test",data)
-      },
-      error:(error)=>{
-        // console.log("test",error)
-      }
+      // next:(data)=>{
+      //   // console.log("test",data)
+      // },
+      // error:(error)=>{
+      //   // console.log("test",error)
+      // }
     })
   }
 

@@ -37,7 +37,20 @@
   -webkit-border-radius: $radius;
   -moz-border-radius: $radius;
 }
-
+.row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px; }
+.container {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto; }
 .colorlib-nav {
   background: white; /* Set the background color */
   color: #000000; /* Set the text color */
@@ -117,19 +130,27 @@
   display: flex;
 }
 
-.search {
-  border: 1px solid #fff; /* Set the border color for the search input */
-  border-radius: 3px; /* Add some border-radius */
-  padding: 5px; /* Add padding to the search input */
-}
+.colorlib-nav .top-menu .search-wrap .search {
+  height: 40px;
+  padding-left: 1em;
+  padding-right: 4.5em;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  -ms-border-radius: 30px;
+  border-radius: 30px; }
+.search:focus {
+  border: 1px solid #e6e6e6 !important; }
 
-.submit-search {
-  background: #ffd700; /* Set the background color for the search button */
-  border: none;
-  border-radius: 15px;
-  color: #333;
-  cursor: pointer;
-}
+  .submit-search {
+    height: 40px;
+    width: 40px;
+    position: absolute;
+    top: 0;
+    right: -5px;
+    padding: 0;
+    background: #88c8bc;
+    border: 1px solid #88c8bc;
+    border-radius: 30px; }
 
 .menu-1 ul {
   list-style: none;
@@ -149,7 +170,20 @@
 			font-size: 15px;
 			letter-spacing: 2px;
 }
-.menu-1 ul li &.cart{
+.menu-1 ul li a{
+  position: relative;
+  padding: 10px 12px;
+  color: black;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  -webkit-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+.menu-1 ul li a:hover{
+  color: #000;
+}
+.cart{
   float: right;
 }
 
@@ -161,17 +195,20 @@
   font-size: 20px;
   margin-right: 5px;
 }
-
 .sale {
-  background: #78cfbf; /* Set the background color for the sale section */
-  color: white; /* Set the text color for the sale section */
+  padding: 14px 0;
+  background: #88c8bc;
+}
+
+.sale h3{
+    margin-bottom: 0;
+    font-family: "Montserrat", Arial, sans-serif;
+    text-transform: uppercase;
+    font-size: 20px;
 
   padding: 14px 0;
 }
-
 .sale h3 a {
-  color: white;
-  text-align: center;
-   /* Set the link color for the sale section */
-   font-size: 22px;
-}
+  color: #fff; }
+
+
