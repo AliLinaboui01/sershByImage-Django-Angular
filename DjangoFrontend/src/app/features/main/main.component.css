@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Poppins:wght@400;500;600;700;900&display=swap');
+
+.main_slider {
+  background-image: url("../../../assets/images/slider_1.jpg");
+  width: 100%;
+  height: 700px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  margin-top: 50px;
+}
+
+.main_slider_content {
+  margin-top: 20%; /* Adjusted for better centering */
+  width: 60%;
+  margin-left: 10%;
+}
+
+.main_slider_content h6 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  text-transform: uppercase;
+  margin-bottom: 29px;
+
+}
+
+.main_slider_content h1 {
+  font-family: 'Montserrat', sans-serif; /* Added font-family for h1 */
+  font-weight: 400;
+  line-height: 1;
+  font-size: 50px;
+}
+
+.red_button {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: auto;
+  height: 40px;
+  background: #88c8bc;
+  border-radius: 3px;
+  transition: all 0.3s ease;
+}
+
+.red_button:hover {
+  background: #8de7d7 !important;
+}
+
+.red_button a {
+  display: block;
+  color: #FFFFFF;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 500;
+  text-align: center;
+  line-height: 40px;
+  width: 100%;
+}
+
+.shop_now_button {
+  width: 140px;
+  margin-top: 32px;
+}
+#image {
+  display: none; /* Hide the default file input */
+}
+
+.custom-file-upload {
+  border-radius: 15px;
+  color: #FFFFFF;
+  display: inline-block;
+  padding: 6px 12px;
+  cursor: pointer;
+  margin-top: 10px;
+  background-color: #88c8bc;
+}
+
+/* Style the file input label on hover to give a visual cue */
+.custom-file-upload:hover {
+  cursor: pointer;
+}
+.mySearsh{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: auto;
+  height: 40px;
+  background: #88c8bc;
+  border-radius: 3px;
+  transition: all 0.3s ease;
+  width: 200px;
+  margin-top: 32px;
+  border-radius: 10px;
+  color: #FFFFFF;
+}
+i{
+  padding-left: 10px;
+}

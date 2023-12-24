@@ -179,9 +179,10 @@
   -webkit-transition: all 0.5s ease;
   -ms-transition: all 0.5s ease;
   transition: all 0.5s ease;
+  cursor: pointer;
 }
 .menu-1 ul li a:hover{
-  color: #000;
+  color: #D6EADF;
 }
 .cart{
   float: right;
@@ -211,4 +212,9 @@
 .sale h3 a {
   color: #fff; }
 
+
+.center-element{
+  display: flex;
+  justify-content: center;
+}
 

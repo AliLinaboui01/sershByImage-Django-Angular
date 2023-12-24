@@ -7,18 +7,25 @@ import { HeaderComponent } from './features/header/header.component';
 import { ListeImageComponent } from './features/liste-image/liste-image.component';
 import { CardImageComponent } from './features/card-image/card-image.component';
 import { HttpClientModule } from '@angular/common/http';
+import { MainComponent } from './features/main/main.component';
+import { ReactiveFormsModule } from '@angular/forms';
+import { FooterComponent } from './features/footer/footer.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
       ListeImageComponent,
-      CardImageComponent
+      CardImageComponent,
+      MainComponent,
+      FooterComponent
+
    ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
