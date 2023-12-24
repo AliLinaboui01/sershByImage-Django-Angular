@@ -1,0 +1,177 @@
+// .header {
+//   background-color: #333;
+//   color: white;
+//   padding: 10px;
+//   display: flex;
+//   justify-content: space-between;
+//   align-items: center;
+// }
+
+// .logo {
+//   font-size: 1.5em;
+//   font-weight: bold;
+// }
+
+// .list ul {
+//   list-style-type: none;
+//   margin: 0;
+//   padding: 0;
+//   display: flex;
+// }
+
+// .list li {
+//   margin-right: 20px;
+// }
+
+// .list li:last-child {
+//   margin-right: 0;
+// }
+
+// .list li:hover {
+//   text-decoration: underline;
+// }
+
+/* Add this CSS to style the navigation */
+@mixin border-radius($radius) {
+  border-radius: $radius;
+  -webkit-border-radius: $radius;
+  -moz-border-radius: $radius;
+}
+
+.colorlib-nav {
+  background: white; /* Set the background color */
+  color: #000000; /* Set the text color */
+
+}
+
+.colorlib-nav a {
+  color: #000000; /* Set the link color */
+}
+
+.colorlib-nav a:hover {
+  color: #78cfbf; /* Set the link color on hover */
+}
+
+// .top-menu {
+//   padding: 50px 0 10px 0;
+//   margin-left: 40px;
+//   margin-right: 40px;
+// }
+.top-menu {
+  padding: 50px 0 10px 0;
+
+  @media (max-width: 576px) {
+    padding: 28px 0;
+  }
+  .search-wrap {
+    .form-group {
+      position: relative;
+    }
+
+    .search {
+      height: 40px;
+      padding-left: 1em;
+      padding-right: 4.5em;
+
+      @include border-radius(30px);
+
+      &:focus {
+        border: 1px solid lighten(#000, 90%) !important;
+      }
+    }
+
+    .submit-search {
+      height: 40px;
+      width: 40px;
+      position: absolute;
+      top: 0;
+      right: -5px;
+      padding: 0;
+      background: #88c8bc;
+      border: 1px solid #88c8bc;
+
+      i {
+        padding: 0;
+      }
+    }
+  }
+}
+
+
+#colorlib-logo a {
+  font-size: 24px;
+  font-weight: bold;
+  color: #595959;
+}
+#colorlib-logo{
+  font-size: 34px;
+		margin: 0;
+		padding: 0;
+		font-weight: 700;}
+
+.search-wrap {
+  display: flex;
+}
+
+.form-group {
+  display: flex;
+}
+
+.search {
+  border: 1px solid #fff; /* Set the border color for the search input */
+  border-radius: 3px; /* Add some border-radius */
+  padding: 5px; /* Add padding to the search input */
+}
+
+.submit-search {
+  background: #ffd700; /* Set the background color for the search button */
+  border: none;
+  border-radius: 15px;
+  color: #333;
+  cursor: pointer;
+}
+
+.menu-1 ul {
+  list-style: none;
+
+  padding: 0;
+	margin: 20px 0 0 -12px;
+}
+
+.menu-1 ul li {
+  padding: 0;
+			margin: 0;
+			list-style: none;
+			display: inline;
+			font-weight: 400;
+			font-family: #88c8bc;
+			text-transform: uppercase;
+			font-size: 15px;
+			letter-spacing: 2px;
+}
+.menu-1 ul li &.cart{
+  float: right;
+}
+
+.cart {
+  position: relative;
+}
+
+.icon-shopping-cart {
+  font-size: 20px;
+  margin-right: 5px;
+}
+
+.sale {
+  background: #78cfbf; /* Set the background color for the sale section */
+  color: white; /* Set the text color for the sale section */
+
+  padding: 14px 0;
+}
+
+.sale h3 a {
+  color: white;
+  text-align: center;
+   /* Set the link color for the sale section */
+   font-size: 22px;
+}
