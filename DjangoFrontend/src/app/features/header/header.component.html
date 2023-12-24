@@ -40,12 +40,12 @@
                 class="form-control search"
                 placeholder="Search"
               />
-              <button
+              <button (click)="triggerFileInput()"
                 class="btn btn-primary submit-search text-center"
                 type="submit"
-              >
-                <i class="icon-search"></i>
-              </button>
+
+              ><i class="fa-thin fa-camera"></i></button>
+              <input type="file" name="myImage" accept="image/png, image/gif, image/jpeg" (change)="onFileSelected($event)" style="display: none;" #fileInput />
             </div>
           </form>
         </div>
@@ -60,8 +60,8 @@
             <li><a href="#">Women</a></li>
             <li><a href="#">About</a></li>
             <li><a href="#">Contact</a></li>
-            <li class="cart">
-              <a href="#"><i class="icon-shopping-cart"></i> Cart [0]</a>
+            <li  class="cart">
+              <a  href="#"><i class="icon-shopping-cart"></i> Cart [0]</a>
             </li>
           </ul>
         </div>
