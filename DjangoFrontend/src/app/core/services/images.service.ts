@@ -1,24 +1,22 @@
 import { HttpClient } from '@angular/common/http';
-import { Injectable } from '@angular/core';
+import { Injectable, OnInit, inject } from '@angular/core';
 import { Observable } from 'rxjs';
+import { ResultImages } from '../models/resultImages';
 
 @Injectable({
   providedIn: 'root'
 })
-export class ImagesService {
+export class ImagesService{
 
-  url ="http://127.0.0.1:8000/"
+  private apiUrl = 'http://127.0.0.1:8000/';
 
-  private apiUrl = "http://localhost:8000/";
+  constructor(private httpClient: HttpClient) {}
 
-  constructor(private http: HttpClient) {}
-
-  getImages(){
-    // return this.http.get<Images>(this.url)
-    return this.http.get('https://jsonplaceholder.typicode.com/posts');
+  getImages(): Observable<any[]> {
+    return this.httpClient.get<any[]>(this.apiUrl);
   }
-  searshByImages(formData: FormData): Observable<any> {
-    return this.http.post(this.apiUrl + 'upload/', formData);
+  searshByImages(formData: FormData): Observable<any[]> {
+    return this.httpClient.post<any[]>(this.apiUrl + 'upload/', formData);
   }
 
 }

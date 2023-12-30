@@ -1,13 +1,12 @@
 
   <div class="group relative text-sm">
     <div class="aspect-h-1 aspect-w-1 overflow-hidden rounded-lg bg-gray-100 group-hover:opacity-75">
-      <img src="https://tailwindui.com/img/ecommerce-images/mega-menu-category-01.jpg" alt="Models sitting back to back, wearing Basic Tee in black and bone." class="object-cover object-center">
+      <img [src]="imagePath" alt="Product Image" class="object-cover object-center">
+
     </div>
-    <a href="#" class="mt-6 block font-medium text-gray-900">
-      <span class="absolute inset-0 z-10" aria-hidden="true"></span>
-      New Arrivals
-    </a>
-    <p aria-hidden="true" class="mt-1">Shop now</p>
+    <div class="cont">
+      <button class="button" type="button"> <i class="fa-solid fa-magnifying-glass-dollar"></i> Preview</button>
+    </div>
   </div>
 
 
