@@ -8,10 +8,10 @@
           <form id="imageForm" enctype="multipart/form-data">
             <label for="image" class="custom-file-upload">
               <input type="file" id="image" name="image" accept="image/*" required>
-              Choose  image<i class="fa-solid fa-camera"></i>
+              Choose  image <i class="fa-solid fa-camera"></i>
             </label>
             <br>
-            <button class="btn mySearsh" type="button" (click)="uploadImage()">Searsh Your Image</button>
+            <a (click)="goToResult()"><button class="btn mySearsh" type="button" (click)="uploadImage()"><i class="fa-solid fa-magnifying-glass"></i></button></a>
           </form>
         </div>
       </div>

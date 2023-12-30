@@ -10,6 +10,8 @@ import { HttpClientModule } from '@angular/common/http';
 import { MainComponent } from './features/main/main.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { FooterComponent } from './features/footer/footer.component';
+import { ResultCardComponent } from './features/result-card/result-card.component';
+import { ResultComponent } from './features/result/result.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +20,9 @@ import { FooterComponent } from './features/footer/footer.component';
       ListeImageComponent,
       CardImageComponent,
       MainComponent,
-      FooterComponent
+      FooterComponent,
+      ResultCardComponent,
+      ResultComponent
 
    ],
   imports: [

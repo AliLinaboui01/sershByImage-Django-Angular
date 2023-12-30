@@ -90,11 +90,8 @@
   background: #88c8bc;
   border-radius: 3px;
   transition: all 0.3s ease;
-  width: 200px;
-  margin-top: 32px;
+  margin-top: 5px;
   border-radius: 10px;
   color: #FFFFFF;
 }
-i{
-  padding-left: 10px;
-}
+
