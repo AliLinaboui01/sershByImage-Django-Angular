@@ -12,6 +12,7 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { FooterComponent } from './features/footer/footer.component';
 import { ResultCardComponent } from './features/result-card/result-card.component';
 import { ResultComponent } from './features/result/result.component';
+import { PreviewComponent } from './features/preview/preview.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { ResultComponent } from './features/result/result.component';
       MainComponent,
       FooterComponent,
       ResultCardComponent,
-      ResultComponent
+      ResultComponent,
+      PreviewComponent,
 
    ],
   imports: [

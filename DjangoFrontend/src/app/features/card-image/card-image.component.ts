@@ -1,4 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
+import { Route, Router } from '@angular/router';
 
 @Component({
   selector: 'app-card-image',
@@ -8,9 +9,10 @@ import { Component, Input, OnInit } from '@angular/core';
 export class CardImageComponent implements OnInit {
   @Input() imagePath:String='';
 
-  constructor() { }
+  constructor(private router:Router) { }
 
   ngOnInit() {
   }
+
 
 }
