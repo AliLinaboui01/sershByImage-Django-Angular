@@ -18,13 +18,13 @@ import { PreviewComponent } from './features/preview/preview.component';
   declarations: [
     AppComponent,
     HeaderComponent,
-      ListeImageComponent,
-      CardImageComponent,
-      MainComponent,
-      FooterComponent,
-      ResultCardComponent,
-      ResultComponent,
-      PreviewComponent,
+    ListeImageComponent,
+    CardImageComponent,
+    MainComponent,
+    FooterComponent,
+    ResultCardComponent,
+    ResultComponent,
+    PreviewComponent,
 
    ],
   imports: [
